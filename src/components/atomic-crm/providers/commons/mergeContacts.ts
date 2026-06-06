@@ -128,6 +128,8 @@ export const mergeContacts = async (
       lead_source: winnerContact.lead_source ?? loserContact.lead_source,
       product_interest:
         winnerContact.product_interest ?? loserContact.product_interest,
+      lead_temperature:
+        winnerContact.lead_temperature ?? loserContact.lead_temperature,
       first_seen: winnerContact.first_seen ?? loserContact.first_seen,
       last_seen:
         winnerContact.last_seen > loserContact.last_seen

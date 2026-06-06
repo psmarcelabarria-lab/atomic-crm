@@ -23,6 +23,7 @@ export type ContactImportSchema = {
   status: string;
   lead_source: string;
   product_interest: string;
+  lead_temperature: string;
   tags: string;
   linkedin_url: string;
 };
@@ -105,6 +106,7 @@ export function useContactImport() {
             status,
             lead_source,
             product_interest,
+            lead_temperature,
             company: companyName,
             tags: tagNames,
             linkedin_url,
@@ -145,6 +147,7 @@ export function useContactImport() {
                 status,
                 lead_source,
                 product_interest,
+                lead_temperature,
                 company_id: company?.id,
                 tags: tagList.map((tag) => tag.id),
                 sales_id: user?.identity?.id,

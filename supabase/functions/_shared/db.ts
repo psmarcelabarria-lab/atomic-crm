@@ -33,6 +33,7 @@ export interface ContactsTable {
   status: string | null;
   lead_source: string | null;
   product_interest: string | null;
+  lead_temperature: string | null;
   tags: number[] | null;
   company_id: number | null;
   sales_id: number | null;

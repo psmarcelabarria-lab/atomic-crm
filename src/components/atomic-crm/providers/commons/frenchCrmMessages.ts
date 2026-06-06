@@ -89,6 +89,7 @@ export const frenchCrmMessages = {
         has_newsletter: "Abonné à la newsletter",
         lead_source: "Origine du lead",
         product_interest: "Intérêt produit",
+        lead_temperature: "Température du lead",
         sales_id: "Responsable de compte",
       },
       action: {
@@ -162,6 +163,11 @@ export const frenchCrmMessages = {
           book_algorithm: "Libro El Algoritmo del Vínculo",
           mic_b2b: "MIC B2B",
           other: "Autre",
+        },
+        lead_temperatures: {
+          cold: "Frío",
+          warm: "Tibio",
+          hot: "Caliente",
         },
       },
       list: {

@@ -86,6 +86,7 @@ export const englishCrmMessages = {
         has_newsletter: "Has newsletter",
         lead_source: "Lead source",
         product_interest: "Product interest",
+        lead_temperature: "Lead temperature",
         sales_id: "Account manager",
       },
       action: {
@@ -158,6 +159,11 @@ export const englishCrmMessages = {
           book_algorithm: "Libro El Algoritmo del Vínculo",
           mic_b2b: "MIC B2B",
           other: "Other",
+        },
+        lead_temperatures: {
+          cold: "Frío",
+          warm: "Tibio",
+          hot: "Caliente",
         },
       },
       list: {

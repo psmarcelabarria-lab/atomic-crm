@@ -110,6 +110,7 @@ export const generateContacts = (db: Db, size = 500): Required<Contact>[] => {
         "MIC B2B",
         "Otro",
       ]),
+      lead_temperature: random.arrayElement(["Frío", "Tibio", "Caliente"]),
       tags: random
         .arrayElements(db.tags, random.arrayElement([0, 0, 0, 1, 1, 2]))
         .map((tag) => tag.id), // finalize

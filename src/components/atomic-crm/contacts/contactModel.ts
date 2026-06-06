@@ -100,6 +100,12 @@ export const contactProductInterests = [
   { id: "Otro", name: "resources.contacts.inputs.product_interests.other" },
 ];
 
+export const contactLeadTemperatures = [
+  { id: "Frío", name: "resources.contacts.inputs.lead_temperatures.cold" },
+  { id: "Tibio", name: "resources.contacts.inputs.lead_temperatures.warm" },
+  { id: "Caliente", name: "resources.contacts.inputs.lead_temperatures.hot" },
+];
+
 export const translateContactGenderLabel = (
   gender: { value: string; label: string },
   translate: TranslateFn,

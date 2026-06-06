@@ -46,6 +46,7 @@ create table public.contacts (
     status text,
     lead_source text,
     product_interest text,
+    lead_temperature text,
     tags bigint[],
     company_id bigint,
     sales_id bigint,

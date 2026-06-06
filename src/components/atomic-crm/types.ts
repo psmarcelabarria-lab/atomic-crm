@@ -98,6 +98,7 @@ export type Contact = {
   status: string;
   lead_source?: string | null;
   product_interest?: string | null;
+  lead_temperature?: string | null;
   background: string;
   phone_jsonb: PhoneNumberAndType[];
   nb_tasks?: number;

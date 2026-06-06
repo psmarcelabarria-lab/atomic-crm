@@ -25,6 +25,7 @@ import { Avatar } from "./Avatar";
 import { AutocompleteCompanyInput } from "../companies/AutocompleteCompanyInput.tsx";
 import {
   contactLeadSources,
+  contactLeadTemperatures,
   contactProductInterests,
   contactGender,
   translateContactGenderLabel,
@@ -223,6 +224,12 @@ const ContactMiscInputs = () => {
       <SelectInput
         source="product_interest"
         choices={contactProductInterests}
+        helperText={false}
+        parse={(value) => value || null}
+      />
+      <SelectInput
+        source="lead_temperature"
+        choices={contactLeadTemperatures}
         helperText={false}
         parse={(value) => value || null}
       />

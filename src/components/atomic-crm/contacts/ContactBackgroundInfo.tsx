@@ -62,6 +62,18 @@ export const ContactBackgroundInfo = () => {
           ) : null
         }
       />
+      <WithRecord<Contact>
+        render={(record) =>
+          record?.lead_temperature ? (
+            <div className="text-muted-foreground md:py-0.5">
+              <span className="text-sm">
+                {translate("resources.contacts.fields.lead_temperature")}:{" "}
+                {record.lead_temperature}
+              </span>
+            </div>
+          ) : null
+        }
+      />
       <div className="text-muted-foreground md:py-0.5">
         <span className="text-sm">
           {translate("resources.contacts.background.added_on", {

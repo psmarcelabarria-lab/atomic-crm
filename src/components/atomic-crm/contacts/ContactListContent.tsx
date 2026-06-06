@@ -135,7 +135,8 @@ const ContactItemContent = ({
           contact.company_id != null ||
           contact.nb_tasks ||
           contact.lead_source ||
-          contact.product_interest ? (
+          contact.product_interest ||
+          contact.lead_temperature ? (
             <div className="text-sm text-muted-foreground">
               {contact.title && contact.company_id != null
                 ? `${translate("resources.contacts.position_at", {
@@ -161,6 +162,9 @@ const ContactItemContent = ({
                 : ""}
               {contact.product_interest
                 ? ` - ${translate("resources.contacts.fields.product_interest")}: ${contact.product_interest}`
+                : ""}
+              {contact.lead_temperature
+                ? ` - ${translate("resources.contacts.fields.lead_temperature")}: ${contact.lead_temperature}`
                 : ""}
               &nbsp;&nbsp;
               <TagsList />
@@ -308,6 +312,12 @@ const ContactItemContentMobile = ({ contact }: { contact: Contact }) => {
                 <span>
                   {translate("resources.contacts.fields.product_interest")}:{" "}
                   {contact.product_interest}
+                </span>
+              ) : null}
+              {contact.lead_temperature ? (
+                <span>
+                  {translate("resources.contacts.fields.lead_temperature")}:{" "}
+                  {contact.lead_temperature}
                 </span>
               ) : null}
             </div>
