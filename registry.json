@@ -662,6 +662,10 @@
           "type": "registry:component"
         },
         {
+          "path": "src/components/atomic-crm/contacts/GenerateFollowUpButton.tsx",
+          "type": "registry:component"
+        },
+        {
           "path": "src/components/atomic-crm/contacts/ExportVCardButton.tsx",
           "type": "registry:component"
         },
