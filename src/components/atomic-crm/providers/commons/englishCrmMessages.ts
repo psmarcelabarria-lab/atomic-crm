@@ -84,6 +84,7 @@ export const englishCrmMessages = {
         linkedin_url: "LinkedIn URL",
         background: "Background info (bio, how you met, etc)",
         has_newsletter: "Has newsletter",
+        lead_source: "Lead source",
         sales_id: "Account manager",
       },
       action: {
@@ -135,6 +136,16 @@ export const englishCrmMessages = {
         personal_info_types: {
           work: "Work",
           home: "Home",
+          other: "Other",
+        },
+        lead_sources: {
+          instagram: "Instagram",
+          linkedin: "LinkedIn",
+          whatsapp: "WhatsApp",
+          community: "Community",
+          referral: "Referral",
+          web: "Web",
+          event: "Event",
           other: "Other",
         },
       },

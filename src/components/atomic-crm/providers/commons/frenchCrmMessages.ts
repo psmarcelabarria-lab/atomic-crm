@@ -87,6 +87,7 @@ export const frenchCrmMessages = {
         linkedin_url: "URL LinkedIn",
         background: "Informations de contexte",
         has_newsletter: "Abonné à la newsletter",
+        lead_source: "Origine du lead",
         sales_id: "Responsable de compte",
       },
       action: {
@@ -139,6 +140,16 @@ export const frenchCrmMessages = {
         personal_info_types: {
           work: "Pro",
           home: "Perso",
+          other: "Autre",
+        },
+        lead_sources: {
+          instagram: "Instagram",
+          linkedin: "LinkedIn",
+          whatsapp: "WhatsApp",
+          community: "Communauté",
+          referral: "Recommandation",
+          web: "Web",
+          event: "Événement",
           other: "Autre",
         },
       },

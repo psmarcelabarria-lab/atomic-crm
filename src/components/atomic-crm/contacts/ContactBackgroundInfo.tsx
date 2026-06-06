@@ -38,6 +38,18 @@ export const ContactBackgroundInfo = () => {
           ) : null
         }
       />
+      <WithRecord<Contact>
+        render={(record) =>
+          record?.lead_source ? (
+            <div className="text-muted-foreground md:py-0.5">
+              <span className="text-sm">
+                {translate("resources.contacts.fields.lead_source")}:{" "}
+                {record.lead_source}
+              </span>
+            </div>
+          ) : null
+        }
+      />
       <div className="text-muted-foreground md:py-0.5">
         <span className="text-sm">
           {translate("resources.contacts.background.added_on", {

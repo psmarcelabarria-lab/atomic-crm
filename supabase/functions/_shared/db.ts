@@ -31,6 +31,7 @@ export interface ContactsTable {
   last_seen: Date | null;
   has_newsletter: boolean | null;
   status: string | null;
+  lead_source: string | null;
   tags: number[] | null;
   company_id: number | null;
   sales_id: number | null;

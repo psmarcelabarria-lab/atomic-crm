@@ -24,6 +24,7 @@ import type { Sale, Contact } from "../types";
 import { Avatar } from "./Avatar";
 import { AutocompleteCompanyInput } from "../companies/AutocompleteCompanyInput.tsx";
 import {
+  contactLeadSources,
   contactGender,
   translateContactGenderLabel,
   translatePersonalInfoTypeLabel,
@@ -212,6 +213,12 @@ const ContactMiscInputs = () => {
         {translate("resources.contacts.field_categories.misc")}
       </h6>
       <TextInput source="background" multiline helperText={false} />
+      <SelectInput
+        source="lead_source"
+        choices={contactLeadSources}
+        helperText={false}
+        parse={(value) => value || null}
+      />
       <BooleanInput source="has_newsletter" helperText={false} />
       <ReferenceInput
         reference="sales"

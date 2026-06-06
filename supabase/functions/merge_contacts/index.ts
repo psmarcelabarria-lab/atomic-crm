@@ -64,6 +64,7 @@ function mergeContactData(winner: Contact, loser: Contact) {
     linkedin_url: winner.linkedin_url || loser.linkedin_url,
     background: winner.background ?? loser.background,
     has_newsletter: winner.has_newsletter ?? loser.has_newsletter,
+    lead_source: winner.lead_source ?? loser.lead_source,
     first_seen: winner.first_seen ?? loser.first_seen,
     last_seen:
       winner.last_seen && loser.last_seen

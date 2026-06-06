@@ -60,6 +60,17 @@ export const contactGender: ContactGender[] = [
   },
 ];
 
+export const contactLeadSources = [
+  { id: "Instagram", name: "resources.contacts.inputs.lead_sources.instagram" },
+  { id: "LinkedIn", name: "resources.contacts.inputs.lead_sources.linkedin" },
+  { id: "WhatsApp", name: "resources.contacts.inputs.lead_sources.whatsapp" },
+  { id: "Comunidad", name: "resources.contacts.inputs.lead_sources.community" },
+  { id: "Referido", name: "resources.contacts.inputs.lead_sources.referral" },
+  { id: "Web", name: "resources.contacts.inputs.lead_sources.web" },
+  { id: "Evento", name: "resources.contacts.inputs.lead_sources.event" },
+  { id: "Otro", name: "resources.contacts.inputs.lead_sources.other" },
+];
+
 export const translateContactGenderLabel = (
   gender: { value: string; label: string },
   translate: TranslateFn,

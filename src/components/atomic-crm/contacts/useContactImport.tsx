@@ -21,6 +21,7 @@ export type ContactImportSchema = {
   last_seen: string;
   has_newsletter: string;
   status: string;
+  lead_source: string;
   tags: string;
   linkedin_url: string;
 };
@@ -101,6 +102,7 @@ export function useContactImport() {
             last_seen,
             has_newsletter,
             status,
+            lead_source,
             company: companyName,
             tags: tagNames,
             linkedin_url,
@@ -139,6 +141,7 @@ export function useContactImport() {
                   : today,
                 has_newsletter,
                 status,
+                lead_source,
                 company_id: company?.id,
                 tags: tagList.map((tag) => tag.id),
                 sales_id: user?.identity?.id,

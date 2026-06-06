@@ -44,6 +44,7 @@ create table public.contacts (
     last_seen timestamp with time zone,
     has_newsletter boolean,
     status text,
+    lead_source text,
     tags bigint[],
     company_id bigint,
     sales_id bigint,

@@ -96,6 +96,7 @@ export type Contact = {
   gender: string;
   sales_id?: Identifier;
   status: string;
+  lead_source?: string | null;
   background: string;
   phone_jsonb: PhoneNumberAndType[];
   nb_tasks?: number;

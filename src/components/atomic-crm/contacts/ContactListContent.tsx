@@ -131,7 +131,10 @@ const ContactItemContent = ({
           <div className="font-medium">
             {`${contact.first_name} ${contact.last_name ?? ""}`}
           </div>
-          {contact.title || contact.company_id != null || contact.nb_tasks ? (
+          {contact.title ||
+          contact.company_id != null ||
+          contact.nb_tasks ||
+          contact.lead_source ? (
             <div className="text-sm text-muted-foreground">
               {contact.title && contact.company_id != null
                 ? `${translate("resources.contacts.position_at", {
@@ -151,6 +154,9 @@ const ContactItemContent = ({
                 ? ` - ${translate("crm.common.task_count", {
                     smart_count: contact.nb_tasks,
                   })}`
+                : ""}
+              {contact.lead_source
+                ? ` - ${translate("resources.contacts.fields.lead_source")}: ${contact.lead_source}`
                 : ""}
               &nbsp;&nbsp;
               <TagsList />
@@ -286,6 +292,12 @@ const ContactItemContentMobile = ({ contact }: { contact: Contact }) => {
                   {translate("crm.common.task_count", {
                     smart_count: contact.nb_tasks,
                   })}
+                </span>
+              ) : null}
+              {contact.lead_source ? (
+                <span>
+                  {translate("resources.contacts.fields.lead_source")}:{" "}
+                  {contact.lead_source}
                 </span>
               ) : null}
             </div>
