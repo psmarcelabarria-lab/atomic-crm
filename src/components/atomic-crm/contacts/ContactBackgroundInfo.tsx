@@ -50,6 +50,18 @@ export const ContactBackgroundInfo = () => {
           ) : null
         }
       />
+      <WithRecord<Contact>
+        render={(record) =>
+          record?.product_interest ? (
+            <div className="text-muted-foreground md:py-0.5">
+              <span className="text-sm">
+                {translate("resources.contacts.fields.product_interest")}:{" "}
+                {record.product_interest}
+              </span>
+            </div>
+          ) : null
+        }
+      />
       <div className="text-muted-foreground md:py-0.5">
         <span className="text-sm">
           {translate("resources.contacts.background.added_on", {

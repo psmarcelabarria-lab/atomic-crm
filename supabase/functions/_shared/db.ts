@@ -32,6 +32,7 @@ export interface ContactsTable {
   has_newsletter: boolean | null;
   status: string | null;
   lead_source: string | null;
+  product_interest: string | null;
   tags: number[] | null;
   company_id: number | null;
   sales_id: number | null;

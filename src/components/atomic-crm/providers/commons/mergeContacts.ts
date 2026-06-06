@@ -126,6 +126,8 @@ export const mergeContacts = async (
       has_newsletter:
         winnerContact.has_newsletter ?? loserContact.has_newsletter,
       lead_source: winnerContact.lead_source ?? loserContact.lead_source,
+      product_interest:
+        winnerContact.product_interest ?? loserContact.product_interest,
       first_seen: winnerContact.first_seen ?? loserContact.first_seen,
       last_seen:
         winnerContact.last_seen > loserContact.last_seen

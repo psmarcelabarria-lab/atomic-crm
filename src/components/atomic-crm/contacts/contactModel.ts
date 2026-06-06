@@ -71,6 +71,35 @@ export const contactLeadSources = [
   { id: "Otro", name: "resources.contacts.inputs.lead_sources.other" },
 ];
 
+export const contactProductInterests = [
+  { id: "VIRA", name: "resources.contacts.inputs.product_interests.vira" },
+  {
+    id: "IA en Consulta",
+    name: "resources.contacts.inputs.product_interests.ai_consultation",
+  },
+  {
+    id: "Asesoría 1:1",
+    name: "resources.contacts.inputs.product_interests.one_to_one",
+  },
+  {
+    id: "MentorIA MIC",
+    name: "resources.contacts.inputs.product_interests.mentoria_mic",
+  },
+  {
+    id: "Consultoría MIC",
+    name: "resources.contacts.inputs.product_interests.consultoria_mic",
+  },
+  {
+    id: "Libro El Algoritmo del Vínculo",
+    name: "resources.contacts.inputs.product_interests.book_algorithm",
+  },
+  {
+    id: "MIC B2B",
+    name: "resources.contacts.inputs.product_interests.mic_b2b",
+  },
+  { id: "Otro", name: "resources.contacts.inputs.product_interests.other" },
+];
+
 export const translateContactGenderLabel = (
   gender: { value: string; label: string },
   translate: TranslateFn,

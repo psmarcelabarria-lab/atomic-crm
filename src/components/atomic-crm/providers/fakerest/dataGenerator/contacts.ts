@@ -100,6 +100,16 @@ export const generateContacts = (db: Db, size = 500): Required<Contact>[] => {
         "Evento",
         "Otro",
       ]),
+      product_interest: random.arrayElement([
+        "VIRA",
+        "IA en Consulta",
+        "Asesoría 1:1",
+        "MentorIA MIC",
+        "Consultoría MIC",
+        "Libro El Algoritmo del Vínculo",
+        "MIC B2B",
+        "Otro",
+      ]),
       tags: random
         .arrayElements(db.tags, random.arrayElement([0, 0, 0, 1, 1, 2]))
         .map((tag) => tag.id), // finalize

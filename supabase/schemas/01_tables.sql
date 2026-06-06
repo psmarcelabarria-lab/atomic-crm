@@ -45,6 +45,7 @@ create table public.contacts (
     has_newsletter boolean,
     status text,
     lead_source text,
+    product_interest text,
     tags bigint[],
     company_id bigint,
     sales_id bigint,

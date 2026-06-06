@@ -25,6 +25,7 @@ import { Avatar } from "./Avatar";
 import { AutocompleteCompanyInput } from "../companies/AutocompleteCompanyInput.tsx";
 import {
   contactLeadSources,
+  contactProductInterests,
   contactGender,
   translateContactGenderLabel,
   translatePersonalInfoTypeLabel,
@@ -216,6 +217,12 @@ const ContactMiscInputs = () => {
       <SelectInput
         source="lead_source"
         choices={contactLeadSources}
+        helperText={false}
+        parse={(value) => value || null}
+      />
+      <SelectInput
+        source="product_interest"
+        choices={contactProductInterests}
         helperText={false}
         parse={(value) => value || null}
       />

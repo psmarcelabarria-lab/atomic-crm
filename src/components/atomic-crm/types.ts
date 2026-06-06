@@ -97,6 +97,7 @@ export type Contact = {
   sales_id?: Identifier;
   status: string;
   lead_source?: string | null;
+  product_interest?: string | null;
   background: string;
   phone_jsonb: PhoneNumberAndType[];
   nb_tasks?: number;
