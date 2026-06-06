@@ -219,6 +219,17 @@ export const englishCrmMessages = {
         empty_hint: 'Contacts with a "hot" status will appear here.',
         title: "Hot Contacts",
       },
+      follow_up: {
+        action: "Generar seguimiento con IA",
+        title: "Seguimiento sugerido",
+        description:
+          "Mensajes simulados para validar el flujo. No se usa IA real todavía.",
+        variants: {
+          direct: "Directa",
+          warm: "Cálida",
+          commercial: "Más comercial",
+        },
+      },
     },
     deals: {
       name: "Deal |||| Deals",

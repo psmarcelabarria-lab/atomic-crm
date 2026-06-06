@@ -224,6 +224,17 @@ export const frenchCrmMessages = {
         empty_hint: 'Les contacts avec un statut "chaud" apparaîtront ici.',
         title: "Contacts chauds",
       },
+      follow_up: {
+        action: "Generar seguimiento con IA",
+        title: "Seguimiento sugerido",
+        description:
+          "Mensajes simulados para validar el flujo. No se usa IA real todavía.",
+        variants: {
+          direct: "Directa",
+          warm: "Cálida",
+          commercial: "Más comercial",
+        },
+      },
     },
     deals: {
       name: "Affaire |||| Affaires",
