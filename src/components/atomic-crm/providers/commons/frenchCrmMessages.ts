@@ -68,7 +68,7 @@ export const frenchCrmMessages = {
       name: "Contact |||| Contacts",
       forcedCaseName: "Contact",
       field_categories: {
-        background_info: "Informations complémentaires",
+        background_info: "Contexto, dolor y necesidad principal",
         identity: "Identité",
         misc: "Divers",
         personal_info: "Informations personnelles",
@@ -85,7 +85,7 @@ export const frenchCrmMessages = {
         phone_jsonb: "Numéros de téléphone",
         phone_number: "Numéro de téléphone",
         linkedin_url: "URL LinkedIn",
-        background: "Informations de contexte",
+        background: "Contexto, dolor y necesidad principal",
         has_newsletter: "Abonné à la newsletter",
         lead_source: "Origine du lead",
         product_interest: "Intérêt produit",
@@ -169,6 +169,8 @@ export const frenchCrmMessages = {
           warm: "Tibio",
           hot: "Caliente",
         },
+        background_hint:
+          "Anota aquí qué necesita esta persona, qué problema quiere resolver, cómo llegó, qué le interesa y cualquier contexto relevante para el seguimiento.",
       },
       list: {
         error_loading: "Erreur lors du chargement des contacts",

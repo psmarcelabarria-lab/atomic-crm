@@ -214,7 +214,12 @@ const ContactMiscInputs = () => {
       <h6 className="text-lg font-semibold">
         {translate("resources.contacts.field_categories.misc")}
       </h6>
-      <TextInput source="background" multiline helperText={false} />
+      <TextInput
+        source="background"
+        multiline
+        helperText={false}
+        placeholder={translate("resources.contacts.inputs.background_hint")}
+      />
       <SelectInput
         source="lead_source"
         choices={contactLeadSources}

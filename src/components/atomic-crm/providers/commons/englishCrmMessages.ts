@@ -65,7 +65,7 @@ export const englishCrmMessages = {
       name: "Contact |||| Contacts",
       forcedCaseName: "Contact",
       field_categories: {
-        background_info: "Background info",
+        background_info: "Contexto, dolor y necesidad principal",
         identity: "Identity",
         misc: "Misc",
         personal_info: "Personal info",
@@ -82,7 +82,7 @@ export const englishCrmMessages = {
         phone_jsonb: "Phone numbers",
         phone_number: "Phone number",
         linkedin_url: "LinkedIn URL",
-        background: "Background info (bio, how you met, etc)",
+        background: "Contexto, dolor y necesidad principal",
         has_newsletter: "Has newsletter",
         lead_source: "Lead source",
         product_interest: "Product interest",
@@ -165,6 +165,8 @@ export const englishCrmMessages = {
           warm: "Tibio",
           hot: "Caliente",
         },
+        background_hint:
+          "Anota aquí qué necesita esta persona, qué problema quiere resolver, cómo llegó, qué le interesa y cualquier contexto relevante para el seguimiento.",
       },
       list: {
         error_loading: "Error loading contacts",
